@@ -92,7 +92,7 @@
         
     },
     "variables": {
-        "templateLink": "https://github.com/jha-raghav/aks-cluster-armtemplate"
+        "templateLink": "https://github.com/jha-raghav/aks-cluster-armtemplate/blob/master/aks-kubernetes-cluster.json"
     },
     "resources": [
  {
