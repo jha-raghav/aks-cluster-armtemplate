@@ -4,8 +4,8 @@
     "parameters": {    
     },
     "variables": {
-        "templateLink": "https://github.com/jha-raghav/aks-cluster-armtemplate/aks-kubernetes-cluster.json",
-        "parameterLink": "https://github.com/jha-raghav/aks-cluster-armtemplate/aks-kubernetes-cluster-parameters.json"
+        "templateLink": "https://raw.githubusercontent.com/jha-raghav/simple-app/master/cluster.json",
+        "parameterLink": "https://raw.githubusercontent.com/jha-raghav/simple-app/master/cluster-parameters.json"
     },
     "resources": [
  {
