@@ -1,0 +1,35 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {    
+    },
+    "variables": {
+        "templateLink": "https://github.com/jha-raghav/aks-cluster-armtemplate/aks-kubernetes-cluster.json",
+        "parameterLink": "https://github.com/jha-raghav/aks-cluster-armtemplate/aks-kubernetes-cluster.json"
+    },
+    "resources": [
+ {
+     "name": "nestedDeployment1",
+     "type": "Microsoft.Resources/deployments",
+     "apiVersion": "2019-10-01",
+     "properties": {
+         "expressionEvaluationOptions": {
+             "scope": "outer"
+         },
+         "mode": "Incremental",
+         "templateLink": {
+             "uri": "[variables('templateLink')]",
+             "contentVersion": "1.0.0.0"
+         },
+         "parametersLink": {
+            "uri": "[variables('parameterLink')]",
+            "contentVersion": "1.0.0.0"
+         }
+
+     }
+ }
+
+    ],
+    "outputs": {
+    }
+}
