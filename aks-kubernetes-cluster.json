@@ -35,10 +35,4 @@
             }
         }
     ],
-    "outputs": {
-        "controlPlaneFQDN": {
-            "type": "string",
-            "value": "[reference(parameters('clusterName')).fqdn]"
-        }
-    }
 }
